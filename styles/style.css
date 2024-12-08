@@ -1,0 +1,70 @@
+.pic-dev{
+    width: auto;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.nome-dev{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.container-dev{
+    color: #fff;
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(../images/common-bg.svg);
+    background-position: center;
+    height: 100vh;
+    min-height: 80rem;
+    max-height: 120rem;
+    position: relative;
+    
+
+}
+
+.home-hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.home-hero-content h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+.text-dev{
+    color: #333;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6
+}
+
+.faculdade{
+    text-decoration: underline;
+    color: black;
+}
+
+.btn-projetos{
+    background: #7843E9;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px 40px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: transform .3s;
+}
+
+.btn-projetos:hover{
+    transform: translateY(-5px);
+}
