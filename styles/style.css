@@ -1,3 +1,11 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+}
+
 .pic-dev{
     width: auto;
     height: 50px;
@@ -16,8 +24,7 @@
     color: #fff;
     background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(../images/common-bg.svg);
     background-position: center;
-    height: 100vh;
-    min-height: 80rem;
+    min-height: 60rem;
     max-height: 120rem;
     position: relative;
     
@@ -33,16 +40,17 @@
 }
 
 .home-hero-content h1{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     color: black;
 }
 
 .text-dev{
     color: #333;
-    font-size: 2.2rem;
+    font-size: 20px;
     text-align: center;
     width: 100%;
+    max-width: 800px;
     line-height: 1.6
 }
 
@@ -67,4 +75,39 @@
 
 .btn-projetos:hover{
     transform: translateY(-5px);
+}
+
+.about__content-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.about__content-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    margin-left: 25px;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.skills__skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #928c8c67;
+    color: #333;
 }
