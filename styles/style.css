@@ -119,50 +119,64 @@ body{
     text-align: center;
     line-height: 1.6;
 }
-
-.img-projects{
-    width: 60%;
+/* Ajustando o tamanho e o comportamento da imagem */
+.img-projects {
+    width: 100%;
+    max-width: 70%; /* Define uma largura máxima para a imagem */
+    height: auto;
     border-radius: 5px;
-    margin-left: 100px;
-    
+    margin: 0 auto; /* Centraliza a imagem */
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.8);
+    display: block; /* Garante que a imagem se comporte como um bloco para o margin:auto funcionar */
 }
 
-.container-projects{
+.container-projects {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: flex-start; /* Alinha os itens no topo */
     flex-direction: row;
-    
-}
-.project-description{
-    margin-right: 140px;
-}
-@media screen and (max-width: 768px){
-    .container-projects{
-        flex-direction: column;
-    }
-    .img-projects{
-        width: 70%;
-        margin: auto;
-        margin-left: 70px;
-    }
-    .project-description{
-        margin: 0 10px;
-    }
-    
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte, se necessário */
+    width: 100%;
 }
 
+.project-description {
+    margin-right: 140px;
+    padding: 10px;
+    text-align: center; /* Alinha o texto da descrição ao centro */
+    max-width: 500px;  /* Limita a largura da descrição */
+    margin-top: 20px;  /* Adiciona um espaço no topo */
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 768px) {
+    .container-projects {
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+    .img-projects {
+        width: 100%; /* A imagem ocupa toda a largura disponível */
+        margin: 10px auto; /* Centraliza as imagens */
+    }
+    .project-description {
+        margin: 10px 0;
+        text-align: center; /* Garante que o texto fique centralizado também em telas pequenas */
+    }
+}
+
+/* Ajustes para telas maiores que 769px */
 @media screen and (min-width: 769px) {
     .img-projects {
-        width: 60%;
+        width: 60%; /* Para telas maiores, a imagem ocupa 60% */
+    }
+    .project-description {
+        margin-left: 20px;  /* Dá uma margem à esquerda da descrição */
     }
 }
 
-
-.sub-title{
+.sub-title {
     font-size: 30px;
     font-weight: bold;
     color: #333;
     margin-left: 25px;
-    text-align: center;;
+    text-align: center; /* Centraliza o título */
 }
