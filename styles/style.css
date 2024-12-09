@@ -85,11 +85,12 @@ body{
     padding: 50px 0;
 }
 
-.about__content-title{
+.title{
     font-size: 50px;
     font-weight: bold;
     color: black;
     margin-left: 25px;
+    text-align: center;
 }
 
 .skills{
@@ -117,5 +118,51 @@ body{
     font-size: 20px;
     text-align: center;
     line-height: 1.6;
+}
+
+.img-projects{
+    width: 60%;
+    border-radius: 5px;
+    margin-left: 100px;
     
+}
+
+.container-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.project-description{
+    margin-right: 140px;
+}
+@media screen and (max-width: 768px){
+    .container-projects{
+        flex-direction: column;
+    }
+    .img-projects{
+        width: 70%;
+        margin: auto;
+        margin-left: 70px;
+    }
+    .project-description{
+        margin: 0 10px;
+    }
+    
+}
+
+@media screen and (min-width: 769px) {
+    .img-projects {
+        width: 60%;
+    }
+}
+
+
+.sub-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 25px;
+    text-align: center;;
 }
